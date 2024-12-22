@@ -40,7 +40,7 @@ jobs:
             -f body="Comment but from API call not action"
             
           env: 
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GH_TOKEN: ${{ github.token }}
             ORGANIZATION: ${{ github.event.organization.login }}
             REPO: ${{ github.event.repository.name }}
             ISSUE_NUMBER: ${{ github.event.issue.number }}
