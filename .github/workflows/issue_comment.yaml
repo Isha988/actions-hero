@@ -41,7 +41,7 @@ jobs:
             
         env: 
           GH_TOKEN: ${{ github.token }}
-          ORGANIZATION: ${{ github.event.organization.login }}
+          ORGANIZATION: ${{ github.event.owner.login }}
           REPO: ${{ github.event.repository.name }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
   
