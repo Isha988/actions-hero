@@ -7,8 +7,9 @@ on:
   workflow_dispatch:
 
 defaults:
-  shell: bash
-  working-directory: ./web
+  run:   
+    shell: bash
+    working-directory: ./web
 
 jobs:
   test:
