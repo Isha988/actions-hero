@@ -3,7 +3,7 @@ name: Continuous Integration Workflow
 on:
   pull_request:
     branches:
-      - *
+      - '*'
   workflow_dispatch:
 
 defaults:
